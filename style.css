@@ -1,0 +1,53 @@
+:root {
+  --screen-lg: 1440px;
+  --screen-sm: 375px;
+
+  --clr-primary: hsl(300, 43%, 22%);
+  --clr-primary-lt: hsl(333, 80%, 67%);
+  --clr-neutral: hsl(303, 10%, 53%);
+  --clr-neutral-lt: hsl(300, 24%, 96%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --ff-sans: "League Spartan", sans-serif;
+
+  --fw-normal: 400;
+  --fw-bold: 500;
+  --fw-bolder: 700;
+
+  --fs-400: 0.9375rem;
+  --fs-700: 3.5rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-normal);
+  line-height: 1.5;
+  color: var(--clr-neutral);
+}
+
+h1 {
+  font-size: var(--fs-700);
+  color: var(--clr-primary);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.wrapper {
+  max-width: 1125px;
+  margin-inline: auto;
+}
+
+.upper {
+  display: flex;
+}
+
+.upper > * {
+  flex: 1;
+}
